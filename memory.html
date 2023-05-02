@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>23Webteam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="greentitle">チーミのきろく</div>
-
-
-  <div class="diaryparent">
+  <div class="diary">
+  <div class="paragraph diary-content grupo">
     <div class="minititle">23.3.9</div>
-    <div class="diarycontent">
+    今日はチーフの誕生日前日だったのでみんなでお祝いしました。（と〜〜〜っても嬉しかったです❤️‍🔥 チーフより）飲食チームと22Webチーフの愛乃さん、22デザインチーフの菜摘さんから差し入れを頂いたのでみんなで食べました〜！食いしん坊チーミ！
+      その後はコンポーネントコーディング大会をしました。お互いにわからないところを聞いたりして1人でやるよりも捗どり、大体のコンポーネントを作り終えることができました〜👏
+      遅くまでやっていて空いているお店がなかったので日高屋でアフターして解散！
       今日はチーフの誕生日前日だったのでみんなでお祝いしました。（と〜〜〜っても嬉しかったです❤️‍🔥 チーフより）飲食チームと22Webチーフの愛乃さん、22デザインチーフの菜摘さんから差し入れを頂いたのでみんなで食べました〜！食いしん坊チーミ！
       その後はコンポーネントコーディング大会をしました。お互いにわからないところを聞いたりして1人でやるよりも捗どり、大体のコンポーネントを作り終えることができました〜👏
       遅くまでやっていて空いているお店がなかったので日高屋でアフターして解散！
-    </div>
-    <div class="diarycontent">
-      <img src="./img/cake.jpg">
-    </div>
   </div>
+  <img src="./img/cake.jpg" class="diary-content">
+ </div> 
   <style>
     body{
       background-color:#F6EFE5 ;
@@ -29,23 +31,31 @@
      border-bottom: 3px solid #BAC2A7;
      width:fit-content;
     }
-    .diaryparent{
-      background-color: #ffffff;
-      border-radius: 40px;
-      width: 80%;
-      display: flex;
-    }
-    .dispraycontent{
-      flex-direction: row;
-    }
-    .minititle{
-      font-size: 15px;
-      color: #BAC2A7;
-    }
-    img{
-      width: 100px;
-      height: 200px;
-    }
+   .diary{
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    padding: 2em;
+    margin: 3em;
+   }
+   .diary-content{
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+   }
+   .diary img{
+    width: 48%;
+    /*heightなんとかしないと*/
+    height: 300px;
+    border-radius: 40px;
+    margin: 0 auto;
+   }
+   .minititle{
+    font-family: 'Caveat', cursive;
+    color: #BAC2A7;
+   }
+
   </style>
 </body>
 </html>
