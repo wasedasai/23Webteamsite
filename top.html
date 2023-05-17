@@ -3,12 +3,225 @@
 <head>
   <meta charset="UTF-8">
   <title>23Webteam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="../img/logo_with_">
+    <div class="topimg">
+     <img src="./img/webteam.JPG">
+     <p>23Webteam</p>
+    </div>
+    <div class="oyadayo">
+     <a href="aboutus.html">
+        <div class="parent">
+        <img src="./img/watashira.png">
+        <div>
+            <p class="title">About us</p>
+            <p class="paragraph">私たちは早稲田祭の「顔」である公式サイトを作るチームです。公式サイトの他に新歓サイトや仮サイトの制作もになっています。</br>既存5人、新規6人の少数精鋭ゆるゆるチームです。</p>
+        </div>
+     </div>
+    </a>
+    <a href="memory.html">
+     <div class="parent">
+        <img src="./img/saikundayou.png">
+         <div>
+            <p class="title">Memories</p>
+            <p class="paragraph">Webチームの日常をお届けします。</br>やる気がでるか、いいことがあり次第随時更新します。</br>ちょくちょくチェックしてみるといいことあるかも。かも、、、。</p>
+         </div>
+     </div>
+    </a>
+    </div>
+    <!--本棚みたいなところ-->
+    <!--一段目-->
+    <div class="bookcontainer">
+        <div class="shelf-hosoi">
+            <P class="hosoititle">
+                うぇぶちのメンバー
+            </P>
+            <p class="line"></p>
+        </div>
+        <div class="shelf-hosoi">
+        </div>
+        <div class="shelf">
+            <img src="./img/toujitu.JPG">
+            <p class="line"></p>
+            <p>Weblove</p>
+        </div>
+        <div class="shelf-katamuki">
+        </div>
+        <div class="shelf">
+            <p class="book-title">Kou Sato</p>
+            <p class="line"></p>
+            <p>2004/3/10</p>
+            <p>Chief</p>
+        </div>
+        <div class="shelf-hosoi">
+        </div>
+        <div class="shelf">
+            <img src="./img/weblove.JPG">
+            <p class="line"></p>
+            <p>Weblove</p>
+        </div>
+        <div class="shelf-hosoi">
+        </div>
+        <div class="shelf">
+            <p class="book-title">Rin Itou</p>
+            <p class="line"></p>
+            <p>2002/6/25</p>
+            <p>Recriation</p>
+        </div>
+        <div class="shelf-katamuki">
+        </div>
+    </div>
+</br>
+</br>
+     <!--二段目-->
+    <div class="bookcontainer container2">
+        <div class="shelf">
+            <p class="book-title">Naofumi Seki</p>
+            <p class="line"></p>
+            <p>2004/3/10</p>
+            <p>Teacher</p>
+        </div>
+        <div class="shelf-hosoi">
+        </div>
+        <div class="shelf">
+            <img src="./img/Enoshima.JPG">
+            <p class="line"></p>
+            <p>Weblove</p>
+        </div>
+        <div class="shelf-hosoi">
+        </div>
+        <div class="shelf">
+            <p class="book-title">Rintarou Terashima</p>
+            <p class="line"></p>
+            <p class="name">2002/6/25</p>
+            <p class="name">Sub chief</p>
+        </div>
+        <div class="shelf-katamuki">
+        </div>
+        <div class="shelf">
+            <p class="book-title">Kazuki Matsuda</p>
+            <p class="line"></p>
+            <p>2004/3/10</p>
+            <p>Engineer</p>
+        </div>
+        <div class="shelf-hosoi">
+        </div>
+    </div>
     <style>
         body{
             background-color: #F6EFE5;
+            margin: 0;
+        }
+        .topimg{
+            position: relative;
+            background: #ffffff;
+            width:100%;
+            height: 300px;
+        }
+        .topimg p{
+            position: absolute;
+            color: black;
+            font-family: "Caveat";
+            font-size: 5rem;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+        }
+        .topimg img{
+            width:100%;
+            height: 300px;
+            opacity: 0.5;
+            object-fit: cover;
+        }
+        /*二つのところ*/
+        .oyadayo{
+            display:flex;
+            flex-direction: row;
+        }
+        .parent{
+            text-align: center;
+            margin: 1.5em;
+        }
+        .parent img{
+            width: 100%;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 2em;
+            font-family: "Caveat";
+        }
+        .paragraph{
+            font-family: "Zen Maru Gothic";
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /*本棚*/
+        .bookcontainer {
+            display:flex;
+            flex-direction: row;
+            border-bottom: 4px solid #BAC2A7;
+        }
+        .container2{
+         justify-content: flex-end;   
+        }
+        .shelf{
+            background-color: #ffffff;
+            border-radius: 20px;
+            width:150px;
+            height:170px;
+            text-align: center;
+            font-family: "Caveat";
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+        }
+        .shelf-hosoi{
+            background-color: #ffffff;
+            border-radius: 10px;
+            width:50px;
+            height:170px;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+        }
+        .shelf-katamuki{
+            transform: translateX(-20px) rotate(-7deg);
+            transform-origin: bottom;
+            background-color: #ffffff;
+            border-radius: 10px;
+            width:50px;
+            height:170px;
+            margin-left: 40px;
+            margin-right: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+        }
+        .book-title{
+            font-size: 25px;
+        }
+        .hosoititle{
+            writing-mode: vertical-rl;
+            font-family: "Zen Maru Gothic";
+            font-size: 10px;
+            padding-top: 20px;
+            margin: 0 auto;
+        }
+        .line{
+            border-bottom: 3px dotted #F6EFE5;
+        }
+        .shelf img{
+            width:70%;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .name{
+            font-size: 10px;
         }
     </style>
 </body>
