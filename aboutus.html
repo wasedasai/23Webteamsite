@@ -2,8 +2,112 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   <title>23Webteam</title>
 </head>
 <body>
+  <style>
+    body {
+      font-family: "Caveat";font-size: 50px;
+      background-color:#F6EFE5 ;
+      margin: 0;
+    }
+    .underline {
+   text-decoration: underline #BAC2A7;
+   text-underline-offset: 5px;
+   margin-left: 40px;
+ }
+ .flex {
+   display: flex; /*横並び*/
+   width: 100%;
+   justify-content: center;
+   
+ }
+ .flex .image {
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   position: relative;
+   margin-left: 50px;
+   border-radius:30px 30px 30px 30px;  
+ }
+ .flex .text {
+   margin: 0 0 0 0px;
+   padding: 0;
+   font-size: 95px ;
+   text-align: center;
+   vertical-align: middle;
+   margin-top: 100px;
+ }
+ .moji {
+   text-align: center;
+   font-size: 60px;
+ 
+ }
+ .setumei {
+   
+   font-size: 15px;
+   font-family: "Zen Maru Gothic";
+   width: 800px;
+   margin: auto;
+ }
+ .schedule img{
+  width: 50%;
+ }
+ a{
+            text-decoration: none;
+            color: black;
+        }
+ .footercontainer{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            background-color: rgba(186,194,167,0.6);
+            margin-bottom: 10px;
+        }
+        footer img{
+            width: 150px;
+            height:150px;
+        }
+        footer p{
+            color: #ffffff;
+        }
+   </style>
+   <p class="underline">About us</p>
+   <div class="flex">
+     <p class="text">WEB TEAM</br> 23.</p>
+     <figure class="image"><img src="./img/teamsite.png" width="650px"  ></figure>
+ </div>
+ <div class="moji">
+   <p class="daimei">What we do</p>
+   <p class="setumei">Web チームはその名の通り、早稲田祭に関する全ての情報が掲載された、公式ウェブサイトを作成するチームです。Webサイトは早稲田祭について調べた際に“最初に”目にする制作物です。そのため、分かりやすさや使いやすさ、早稲田祭の魅力や雰囲気を効果的に伝えることを意識しています。新入生が運スタの情報を得るために利用した「新歓サイト」も私たちの制作物です。初心者でも先輩の手厚いサポートがあるので全く問題ありません。「早稲田祭公式webサイト」の制作を最終目標に、私たちと共に楽しみながら素敵なチームを作っていきましょう!</p>
+     <p class="daimei">schedule</p>
+     <p class="setumei">私たちの年間の忙しさは大体こんな感じ！参考にしてみてね！</p>
+   </br>
+     <div class="schedule"><img src="./img/23teamsite_graph.png"></div>
+     <p class="daimei">portfolio</p>
+     <p class="setumei">23既存が制作に関わったサイトが見れます。新歓サイトは23既存だけで作った初めての制作物でした〜！ロゴをクリックしてみてね！</p>
+    <div class="logo"> 
+     <a href="https://wasedasai.net/"><img src="./img/wasedasai22.png" width="200px"></a>
+     <a href="https://wasedasai.github.io/2022shinkan/"><img src="./img/shinkancach.png" width="200px"></a>
+   </div>
+  </br>
+</br>
+    <footer>
+        <a href="https://www.instagram.com/23__web/">
+        <div class="footercontainer">
+            <p class="title">Tap this icon!</p>
+            <img src="./img/icon.png">
+        </div>
+    </a>
+        <p class="title">@Wasedasai2023 Staff Webteam</p>
+    </footer>
 </body>
 </html>
