@@ -8,6 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__logo">
+            <img href="./img/usayama2.png" class="header__logo-link">
+        </h1>
+        <div class="nav__btn js-menu">
+            <a href="./index.html" class="nav__btn-link" > top </a>
+             <a href="./memory.html" class="nav__btn-link"> memories </a>
+              <a href="./aboutus.html" class="nav__btn-link"> about us </a>
+               <a href="https://www.instagram.com/23__web/" class="nav__btn-link"> instagram </a>
+        </div>
+    </header>
     <div class="topimg">
      <img src="./img/webteam.JPG">
      <p>23Webteam</p>
@@ -292,6 +303,90 @@
         footer p{
             color: #ffffff;
         }
+        body.is-open{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding: 5px 10px;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #BAC2A7;
+  color:  rgba(186,194,167,0.6);;
+  overflow: hidden;
+  z-index: 10;
+  font-family: "Caveat";
+}
+
+
+
+.header .nav__btn{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  position: static;
+}
+.header .nav__btn-link{
+  display: block;
+  color: black;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.15;
+  font-size: 30px;
+  
+}
+/*  ハンバーガーメニュー内  */
+.nav__overlay{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(0,0,0,0.6);
+}
+.nav__content{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+}
+.nav__btn{
+  position: absolute;
+  top: 0;
+  left: -55px;
+}
+.nav__btn-link{
+  display: none;
+  margin: 10px;
+}
+
+
+body.is-open .nav__overlay,
+body.is-open .nav__inner{
+  display: block;
+}
+
     </style>
 </body>
 </html>
