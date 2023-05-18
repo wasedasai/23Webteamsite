@@ -13,24 +13,24 @@
      <p>23Webteam</p>
     </div>
     <div class="oyadayo">
-     <a href="aboutus.html">
         <div class="parent">
+            <a href="aboutus.html">
         <img src="./img/watashira.png">
         <div>
             <p class="title">About us</p>
-            <p class="paragraph">私たちは早稲田祭の「顔」である公式サイトを作るチームです。公式サイトの他に新歓サイトや仮サイトの制作もになっています。</br>既存5人、新規6人の少数精鋭ゆるゆるチームです。</p>
+            <p class="paragraph">私たちは早稲田祭の「顔」である公式サイトを作るチームです。</br>公式サイトの他に新歓サイトや仮サイトの制作もになっています。</br>既存5人、新規6人の少数精鋭ゆるゆるチームです。</p>
         </div>
+        </a>
      </div>
-    </a>
-    <a href="memory.html">
      <div class="parent">
+        <a href="memory.html">
         <img src="./img/saikundayou.png">
          <div>
             <p class="title">Memories</p>
             <p class="paragraph">Webチームの日常をお届けします。</br>やる気がでるか、いいことがあり次第随時更新します。</br>ちょくちょくチェックしてみるといいことあるかも。かも、、、。</p>
          </div>
+        </a>
      </div>
-    </a>
     </div>
     <!--本棚みたいなところ-->
     <!--一段目-->
@@ -152,6 +152,10 @@
         <p class="title">@Wasedasai2023 Staff Webteam</p>
     </footer>
     <style>
+        html body{
+            height:100%;
+            width: 100%;
+        }
         body{
             background-color: #F6EFE5;
             margin: 0;
@@ -186,12 +190,23 @@
             display:flex;
             flex-direction: row;
         }
+        @media screen and (max-width: 1240px){
+            .oyadayo{
+                flex-direction: column;
+                margin: 0 auto;
+            }
+            .parent img{
+                width: 60%;
+            }
+        }
+        @media screen and (min-width: 1240px){
+            .parent img{
+            width: 100%;
+        }
+        }
         .parent{
             text-align: center;
             margin: 1.5em;
-        }
-        .parent img{
-            width: 100%;
         }
         .title{
             font-weight: bold;
@@ -265,7 +280,6 @@
         .name{
             font-size: 10px;
         }
-
         .footercontainer{
             margin-top: 30px;
             display: flex;
@@ -275,6 +289,7 @@
         }
         footer{
             background-color: rgba(186,194,167,0.6);
+            margin-bottom: 10px;
         }
         footer img{
             width: 150px;
